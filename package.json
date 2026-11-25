@@ -1,0 +1,15 @@
+{
+  "name": "express-backend-production",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "npm run dev --workspace=@catalogue/api",
+    "build": "npm run build --workspace=@catalogue/api",
+    "start": "npm run start --workspace=@catalogue/api",
+    "test": "npm run test --workspace=@catalogue/api",
+    "test:unit": "npm run test:unit --workspace=@catalogue/api",
+    "test:e2e": "npm run test:e2e --workspace=@catalogue/api",
+    "typecheck": "npm run typecheck --workspace=@catalogue/api"
+  }
+}
